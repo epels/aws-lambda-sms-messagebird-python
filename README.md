@@ -13,4 +13,3 @@ By the way, if you are curious about the mongodb lambda check my other repo: htt
 End result:
 
 ![sms](SMS.jpeg)
-
