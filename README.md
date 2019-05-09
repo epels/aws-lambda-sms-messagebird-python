@@ -10,6 +10,8 @@ Created another AWS Lambda (this lambda) and another subscription in AWS IoT.
 
 By the way, if you are curious about the mongodb lambda check my other repo: https://github.com/mariopoeta/aws-lambda-awsgreengrass-mongodb
 
-End result:
+# End result:
+
+## Yotube video: https://youtu.be/7S7vBX91X2Q
 
 ![sms](SMS.jpeg)
