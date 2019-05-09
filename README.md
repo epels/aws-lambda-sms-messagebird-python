@@ -6,7 +6,7 @@ After finishing my PoC of AWS Greengrass with PLC i was curious if i could send 
 
 Created another AWS Lambda (this lambda) and another subscription in AWS IoT.
 
-![sms_messagebird](sms_messagebird.jpg)
+![sms_messagebird](mqttaws.png)
 
 By the way, if you are curious about the mongodb lambda check my other repo: https://github.com/mariopoeta/aws-lambda-awsgreengrass-mongodb
 
