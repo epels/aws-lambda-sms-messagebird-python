@@ -41,16 +41,14 @@ def button(button_input):
     try:
         if 'ns=2;s=plc.plc_device.greenbutton' in message.values():
             for key, values in message.iteritems():
-                if isinstance(values, dict):
-                    if 1 in values.values():
-                        sms_content = "Someone clicked in the green button!"
-                        send_sms(sms_content)
+                if isinstance(values, dict) and 1 in values.values():
+                    sms_content = "Someone clicked in the green button!"
+                    send_sms(sms_content)
         elif 'ns=2;s=plc.plc_device.redbutton' in message.values():
             for key, values in message.iteritems():
-                if isinstance(values, dict):
-                    if 0 in values.values():
-                        sms_content = "Someone clicked in the red button!"
-                        send_sms(sms_content)
+                if isinstance(values, dict) and 0 in values.values():
+                    sms_content = "Someone clicked in the red button!"
+                    send_sms(sms_content)
     except Exception as e:
         logging.error(e)
 
@@ -71,4 +69,3 @@ def function_handler(event, context):
         filter_input(event)
     except Exception as e:
         logging.error(e)
-    return
