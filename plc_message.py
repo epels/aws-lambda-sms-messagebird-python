@@ -10,7 +10,6 @@ import dns.ipv4
 import dns.resolver
 import dns.inet
 import idna
-import __future__
 
 
 def filter_input(topic_message):
@@ -23,6 +22,7 @@ def filter_input(topic_message):
     except Exception as e:
         logging.error(e)
 
+
 def toggle(toggle_input):
     message = toggle_input
     try:
@@ -34,6 +34,7 @@ def toggle(toggle_input):
             send_sms(sms_content)
     except Exception as e:
         logging.error(e)
+
 
 def button(button_input):
     message = button_input
@@ -53,15 +54,17 @@ def button(button_input):
     except Exception as e:
         logging.error(e)
 
+
 def send_sms(sms_content):
     access_key = 'AccessKey'
     client = messagebird.Client(access_key)
     sms_originator = 'phonenumber'
     sms_recipients = 'phonenumber'
     try:
-        client.message_create(sms_originator,sms_recipients,sms_content)
+        client.message_create(sms_originator, sms_recipients, sms_content)
     except Exception as e:
         logging.error(e)
+
 
 def function_handler(event, context):
     try:
