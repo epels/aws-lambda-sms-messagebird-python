@@ -1,1 +1,1 @@
-# MessageBird + Python + AWS Lambda
+# MessageBird + Python + AWS Lambda example
